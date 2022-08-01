@@ -22,6 +22,6 @@ public class GeneratorController : MonoBehaviour
     }
 
     void SpawnBullet(){
-        Instantiate(bulletPrefab, transform);
+        Instantiate(bulletPrefab, transform.position, bulletPrefab.transform.rotation);
     }
 }
